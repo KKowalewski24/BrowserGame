@@ -2,16 +2,16 @@ package pl.kkowalewski.dao;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertNotNull;
 
-public class SudokuBoardDaoFactoryTest {
+public class DaoFactoryTest {
 
     /*------------------------ FIELDS REGION ------------------------*/
-    private SudokuBoardDaoFactory factory = new SudokuBoardDaoFactory();
+    private DaoFactory factory = new DaoFactory();
 
     /*------------------------ METHODS REGION ------------------------*/
     @Test
     public void makeFileDaoTest() {
-        assertNull(factory.makeFileDao("abc.txt"));
+        assertNotNull(factory.makeFileDao("abc.txt"));
     }
 }
